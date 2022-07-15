@@ -1,0 +1,14 @@
+# As eleições para prefeito da cidade estão se aproximando. Os dados coletados são: quantidade de eleitores aptos e o número de votos para cada candidato. Sabe-se que em municípios com mais de 25 mil eleitores, é exigido o segundo turno caso o candidato não atinja acima de 50% dos votos válidos.
+
+# Crie um programa que receba os dados, calcule e informe se o candidato foi eleito no primeiro turno, ou se haverá segundo turno.
+
+qtde_eleitores = int(input("Quantos eleitores aptos na cidade? "))
+qtde_votos = int(input("Quantos votos foram recebidos pelo candidato? "))
+
+if qtde_eleitores >= 25000:
+    if qtde_votos/qtde_eleitores >= 0.5:
+        print("Eleito no primeiro turno.")
+    else: 
+        print("Haverá segundo turno.")
+else:
+    print("Não há segundo turno para cidades com menos de 25000 eleitores.")
